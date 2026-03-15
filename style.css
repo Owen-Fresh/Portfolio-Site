@@ -4,7 +4,7 @@
 
 body {
   font-family: monospace;
-  background-color: #F0E8D7;
+  background-color: #FFFFFF;
   color: #040D1D;
 }
 
@@ -101,7 +101,7 @@ li {
 }
 
 .mobile-nav-container {
-  background-color: #F0E8D7;
+  background-color: #FFFFFF;
   font-size: 1.5rem;
   
   position: fixed;
@@ -162,7 +162,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #F0E8D7;
+  background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -254,6 +254,12 @@ arranging them yet. */
 .presentation {
   display: flex;
   justify-content: center;
+  padding: 1rem;
+}
+
+.links {
+  display: block;
+  padding: 2rem;
 }
 
 .process-a {
@@ -263,7 +269,7 @@ arranging them yet. */
 /* pseudo-classes */
 
 .nav a:hover {
-  color: #F0E8D7;
+  color: #FFFFFF;
   text-decoration: underline;
 }
 
