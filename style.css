@@ -12,49 +12,46 @@ body {
 /* Typography */
 
 h1 {
-  font-family: "M PLUS 1 Code", monospace;
+  font-family: "Boldonse", sans-serif;
   font-size: 6rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: #192280;
+  color: #1C4386;
 }
 
 h2 {
-  font-family: "M PLUS 1 Code", monospace;
+  font-family: "Boldonse", sans-serif;
   font-size: 2rem;
   font-weight: 500;
 }
 
 h3 {
   font-family: "M PLUS 1 Code", monospace;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 h4 {
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Boldonse", sans-serif;
   font-size: 1rem;
-  font-weight: 500;
-}
-
-h6 {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 200;
+  font-weight: 300;
+  color: #1C4386;
+  padding: 0 0 .5rem 0;
 }
 
 p {
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "M PLUS 1 Code", monospace;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  padding: .25rem 0 0 0;
 }
 
 a {
   font-family: "M PLUS 1 Code", monospace;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  color: #941D12;
+  color: #1C4386;
   text-decoration: underline;
 }
 
@@ -63,22 +60,28 @@ p a {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #941D12;
+  color: #1C4386;
+}
+
+.logo {
+  max-height: 4rem;
 }
 
 
 /* Universal Content */
 
-.header {
+header {
   display: flex;
-  align-items: baseline;
-  padding: 2rem 0 0 0;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: .25rem solid #FCB316;
 }
 
 .nav ul {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  gap: 1rem;
 }
 
 li {
@@ -86,12 +89,20 @@ li {
   width: 100%;
 }
 
-.nav a {
+/* .nav a {
   font-size: 4rem;
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+} */
+
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 2rem 0 0 1rem;
+  border-bottom: .5rem solid #FCB316;
 }
 
 .hamburger-icon {
@@ -144,34 +155,39 @@ li {
   padding: 2rem;
 }
 
-.marker {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 0.5rem 0 0.5rem;
-}
-
-hr {
-  border: 2px solid #192280;
-}
-
 main {
   padding-bottom: 4rem;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 0.5rem;
-  border-top: 4px solid #192280;
+  border-top: .25rem solid #FCB316;
 }
 
 
 /* Index */
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero video {
+  max-height: 100vh;
+}
+
+.body p {
+  font-size: 1.5rem;
+}
+
+.body {
+  padding: 2rem;
+  /* width: 67%; */
+}
 
 .contact {
   display: flex;
@@ -179,59 +195,65 @@ footer {
   padding: 0 0 0.5rem 1rem;
 }
 
-.body {
-  padding: 2rem 0 0 2rem;
-  width: 67%;
-}
-
 
 /* Design */
 
 .project {
   display: flex;
-  padding: 1rem 1rem 0.5rem 2rem;
+  padding: 0rem 0rem 0rem 2rem;
   gap: 1rem;
   height: 50%;
 }
 
-/* Note for code review: the following is probably the 
-weakest area and is deeply in need of refinement. The 
-mobile version of this layout is not as good as I want it 
-to be, I just haven't figured out the optimal solution for 
-arranging them yet. */
-
 .project-details {
-  width: 33%;
+  padding: 2rem;
+  max-width: 33vw;
 }
 
-.project-details h3 {
-  padding-bottom: 0.5rem;
+.vanguard .project-splash {
+  display: flex;
+  justify-content: center;
+  background-color: #0B671C;
+  padding: 1rem;
+  border-bottom: .5rem solid #FCB316;
 }
 
-.project-details h4 {
-  padding-bottom: 1rem;
+.augtag .project-splash {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-bottom: .5rem solid #FCB316;
 }
 
-.project-details a {
-  font-size: 1rem;
+.spella .project-splash {
+  display: flex;
+  justify-content: center;
+  background-color: #FCF6EE;
+  padding: 1rem;
+  border-bottom: .5rem solid #FCB316;
 }
 
-.project-details p {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.coin-boy .project-splash {
+  display: flex;
+  justify-content: center;
+  background-color: #7F0104;
+  padding: 1rem;
+  border-bottom: .5rem solid #FCB316;
 }
 
-.project-content {
-  width: 50%;
+.sunrise .project-splash {
+  display: flex;
+  justify-content: center;
+  background-color: #FBC833;
+  padding: 1rem;
+  border-bottom: .5rem solid #FCB316;
 }
 
-.project-content2 {
-  width: 15%;
+.project-splash video {
+  max-height: 100vh;
 }
 
-.project-content3 {
-  width: 25%;
-}
 
 /* About */
 
@@ -274,11 +296,11 @@ arranging them yet. */
 }
 
 li:hover {
-  background-color: #192280;
+  background-color: #1C4386;
 }
 
 .nav a:active {
-  color: #192280;
+  color: #1C4386;
 }
 
 
@@ -320,12 +342,16 @@ li:hover {
   }
 
   .project-details {
-    width: 100%;
+    max-width: 100vw;
     padding-bottom: 1rem;
   }
 
-  .project-content, .project-content-2, .project-content-3 {
-    width: 100%;
+  .project-details img {
+    max-width: 100vw;
+  }
+
+  .project-splash video {
+    width: 100vw;
   }
 
   .copy {
